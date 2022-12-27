@@ -1,0 +1,44 @@
+{
+    "name": "newnet/setting",
+    "description": "Newnet Setting",
+    "keywords": [
+        "newnet"
+    ],
+    "homepage": "https://newnet.vn",
+    "support" : {
+        "email" : "support@newnet.vn"
+    },
+    "authors": [
+        {
+            "name": "Kim Nguyen",
+            "email": "kimtrien@gmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+        "newnet/media": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Newnet\\Setting\\": "/src"
+        },
+        "files": [
+            "helpers/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Newnet\\Setting\\SettingServiceProvider"
+            ],
+            "aliases": {
+                "Setting": "Newnet\\Setting\\Facade"
+            }
+        },
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
